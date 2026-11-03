@@ -2,7 +2,7 @@
 
 A Merit-inspired accounting overview: blue navigation, financial totals, revenue and expense charts, invoice tables, and bank accounts. Original Nexa interface; no Merit assets, code, or integrations are included.
 
-[Live preview](https://nexaintel2.github.io/accounting/) · [Use with Nexa](https://admin.nexaintel.work)
+[Live preview](https://nexa-accounting.nexa-templates.workers.dev/) · [Use with Nexa](https://admin.nexaintel.work)
 
 ![Accounting preview](preview.webp)
 
@@ -21,7 +21,9 @@ Edit `index.html`, `styles.css`, and `app.js`. Figures, invoices, and chart bars
 
 ## Make it yours
 
-Choose **Use template** in Nexa, or import `https://github.com/nexaintel2/accounting.git` as a new project. Preserve upstream Git history for updates. Set a unique Worker name in `wrangler.jsonc`, build, and deploy `dist/` using the project's Cloudflare connection. No account IDs, secrets, or bindings are included.
+Choose **Use template** in Nexa, or import `https://github.com/nexa-templates/accounting.git` as a new project. Preserve upstream Git history for updates. Set a unique Worker name in `wrangler.jsonc` and deploy using the project's Cloudflare connection. No account IDs, secrets, or bindings are included.
+
+In Nexa **Build & deploy**, select the connected Worker and production branch, use `/` as the root, `npm ci` to install, `npm run build` to build, and `npx --no-install wrangler deploy --name "$NEXA_WORKER_NAME"` to deploy. Enable automatic deployments. Run the initial build, follow its exact commit to success, and verify the saved deployment and Visit URL. Later production-branch pushes use this same pipeline. The public preview needs project sign-in disabled; it contains fictional data only.
 
 Define the ledger, chart of accounts, invoice lifecycle, reconciliation, audit trail, access control, and reporting with an accountant before implementing real functionality. Validate local tax rules and migration balances. Demo totals do not form a reconciled ledger. There are no database migrations or integrations yet.
 
