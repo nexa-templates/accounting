@@ -1,5 +1,7 @@
 # Nexa Accounting
 
+The Nexa Templates organization develops this template and publishes its Cloudflare Worker as a public **Preview**. Figures are fictional and actions simulate the interface; no financial records or bank connections are used. GitHub Pages is not used. Build the customer's real accounting workflows in their own project and account.
+
 A Merit-inspired accounting overview: blue navigation, financial totals, revenue and expense charts, invoice tables, and bank accounts. Original Nexa interface; no Merit assets, code, or integrations are included.
 
 [Live preview](https://nexa-accounting.nexa-templates.workers.dev/) · [Use with Nexa](https://admin.nexaintel.work)
@@ -17,7 +19,7 @@ npm run dev          # http://localhost:3000; PORT overrides the port
 npm run build        # static site in dist/
 ```
 
-Edit `index.html`, `styles.css`, and `app.js`. Figures, invoices, and chart bars are sample markup in `index.html`. GitHub Pages serves the main branch from the repository root.
+Edit `index.html`, `styles.css`, and `app.js`. Figures, invoices, and chart bars are sample markup in `index.html`. Push to `main` to update the published Worker preview through Nexa Build & deploy.
 
 ## Make it yours
 
